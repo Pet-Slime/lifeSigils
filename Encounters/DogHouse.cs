@@ -10,7 +10,6 @@ namespace lifeSigils.Encounters
 {
     internal class DogHouse
     {
-        // Token: 0x0600002F RID: 47 RVA: 0x00002EC8 File Offset: 0x000010C8
         public static void AddEncounter()
         {
             string name = "DogHouse";
