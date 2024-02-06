@@ -2,10 +2,11 @@
 using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
+using lifeSigils.Managers;
 
 namespace lifeSigils.cards
 {
-	public static class Snallygaster
+    public static class Snallygaster
 	{
 		public static void AddCard()
 		{
@@ -26,7 +27,7 @@ namespace lifeSigils.cards
 			Tribes.Add(Tribe.Reptile);
 
 			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(SigilUtils.GetCustomAbility("extraVoid.inscryption.voidSigils", "BloodGuzzler"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "BloodGuzzler"));
 
 			List<Trait> Traits = new List<Trait>();
 

@@ -2,10 +2,11 @@
 using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
+using lifeSigils.Managers;
 
 namespace lifeSigils.cards
 {
-	public static class Greedy_Lizard
+    public static class Greedy_Lizard
 	{
 		public static void AddCard()
 		{
@@ -25,7 +26,7 @@ namespace lifeSigils.cards
 			Tribes.Add(Tribe.Reptile);
 
 			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(SigilUtils.GetCustomAbility("extraVoid.inscryption.LifeCost", "Life Converter"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.LifeCost", "Life Converter"));
 
 			List<Trait> Traits = new List<Trait>();
 

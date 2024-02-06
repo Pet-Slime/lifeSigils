@@ -2,10 +2,11 @@
 using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
+using lifeSigils.Managers;
 
 namespace lifeSigils.cards
 {
-	public static class Coin_Crow
+    public static class Coin_Crow
 	{
 		public static void AddCard()
 		{
@@ -25,8 +26,8 @@ namespace lifeSigils.cards
 			Tribes.Add(Tribe.Bird);
 
 			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(SigilUtils.GetCustomAbility("extraVoid.inscryption.LifeCost", "Cash Converter"));
-			Abilities.Add(SigilUtils.GetCustomAbility("extraVoid.inscryption.voidSigils", "Thief"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.LifeCost", "Cash Converter"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Thief"));
 
 			List<Trait> Traits = new List<Trait>();
 

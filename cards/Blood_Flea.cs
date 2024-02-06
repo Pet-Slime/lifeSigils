@@ -3,10 +3,11 @@ using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
 using InscryptionAPI.Guid;
+using lifeSigils.Managers;
 
 namespace lifeSigils.cards
 {
-	public static class Blood_Flea
+    public static class Blood_Flea
 	{
 		public static readonly CardMetaCategory SIDE_DECK_CATEGORY = GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.sidedecks", "SideDeck");
 
@@ -29,8 +30,8 @@ namespace lifeSigils.cards
 			Tribes.Add(Tribe.Insect);
 
 			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(SigilUtils.GetCustomAbility("extraVoid.inscryption.voidSigils", "Agile"));
-			Abilities.Add(SigilUtils.GetCustomAbility("extraVoid.inscryption.voidSigils", "Draw Blood"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Agile"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Draw Blood"));
 
 			List<Trait> Traits = new List<Trait>();
 

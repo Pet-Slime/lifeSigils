@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using DiskCardGame;
+using lifeSigils.Managers;
 using UnityEngine;
 using Resources = lifeSigils.Artwork.Artwork;
 
 namespace lifeSigils
 {
-	public partial class Plugin
+    public partial class Plugin
 	{
 		private void AddFungalInfection()
 		{
@@ -14,13 +15,14 @@ namespace lifeSigils
 			const string rulebookDescription = "[creature] will cause ants to become fungal ants during the endphase.";
             const string LearnDialogue = "The infection will spread.";
             Texture2D tex_a1 = SigilUtils.LoadTextureFromResource(Resources.void_antSpread);
+            Texture2D tex_a2 = SigilUtils.LoadTextureFromResource(Resources.void_antSpread);
             int powerlevel = 0;
             bool LeshyUsable = false;
             bool part1Shops = false;
             bool canStack = false;
 
             // set ability to behaviour class
-            ability_FungalInfection.ability = SigilUtils.CreateAbilityWithDefaultSettings(rulebookName, rulebookDescription, typeof(ability_FungalInfection), tex_a1, LearnDialogue,
+            ability_FungalInfection.ability = SigilUtils.CreateAbilityWithDefaultSettingsKCM(rulebookName, rulebookDescription, typeof(ability_FungalInfection), tex_a1, tex_a2, LearnDialogue,
                                                                                     true, powerlevel, LeshyUsable, part1Shops, canStack).ability;
         }
 	}

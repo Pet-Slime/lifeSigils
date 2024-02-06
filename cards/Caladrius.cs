@@ -2,10 +2,11 @@
 using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
+using lifeSigils.Managers;
 
 namespace lifeSigils.cards
 {
-	public static class Caladrius
+    public static class Caladrius
 	{
 		public static void AddCard()
 		{
@@ -27,7 +28,7 @@ namespace lifeSigils.cards
 
 			List<Ability> Abilities = new List<Ability>();
 			Abilities.Add(Ability.Flying);
-			Abilities.Add(SigilUtils.GetCustomAbility("extraVoid.inscryption.voidSigils", "Disease Absorbtion"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Disease Absorbtion"));
 
 			List<Trait> Traits = new List<Trait>();
 

@@ -2,10 +2,11 @@
 using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
+using lifeSigils.Managers;
 
 namespace lifeSigils.cards
 {
-	public static class mutilated_sow
+    public static class mutilated_sow
 	{
 		public static void AddCard()
 		{

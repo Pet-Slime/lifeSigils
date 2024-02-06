@@ -19,7 +19,6 @@ namespace lifeSigils
         public override IEnumerator OnDrawn()
         {
             PlayableCard card = (PlayableCard)base.Card;
-
             (Singleton<PlayerHand>.Instance as PlayerHand3D).MoveCardAboveHand(card);
             yield return card.FlipInHand(new System.Action(this.AddMod));
             yield break;
@@ -34,8 +33,7 @@ namespace lifeSigils
 
         private Ability ChooseAbility()
         {
-            Ability ability = Ability.AllStrike;
-            return ability;
+            return Ability.AllStrike;
         }
     }
 }

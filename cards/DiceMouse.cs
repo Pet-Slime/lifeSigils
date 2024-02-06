@@ -2,10 +2,11 @@
 using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
+using lifeSigils.Managers;
 
 namespace lifeSigils.cards
 {
-	public static class DiceMouse
+    public static class DiceMouse
 	{
 		public static void AddCard()
 		{
@@ -24,7 +25,7 @@ namespace lifeSigils.cards
 			List<Tribe> Tribes = new List<Tribe>();
 
 			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(SigilUtils.GetCustomAbility("extraVoid.inscryption.LifeCost", "Die Roll"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.LifeCost", "Die Roll"));
 
 			List<Trait> Traits = new List<Trait>();
 

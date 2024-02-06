@@ -3,10 +3,11 @@ using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
 using InscryptionAPI.Guid;
+using lifeSigils.Managers;
 
 namespace lifeSigils.cards
 {
-	public static class Tamed_Crow
+    public static class Tamed_Crow
 	{
 		public static readonly CardMetaCategory SIDE_DECK_CATEGORY = GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.sidedecks", "SideDeck");
 
@@ -42,7 +43,7 @@ namespace lifeSigils.cards
 
 			List<Ability> Abilities = new List<Ability>();
 			Abilities.Add(Ability.Flying);
-			Abilities.Add(SigilUtils.GetCustomAbility("extraVoid.inscryption.voidSigils", "Coin Finder"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Coin Finder"));
 
 			List<Trait> Traits = new List<Trait>();
 

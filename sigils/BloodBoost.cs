@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using DiskCardGame;
+using lifeSigils.Managers;
 using UnityEngine;
 using Resources = lifeSigils.Artwork.Artwork;
 
 namespace lifeSigils
 {
-	public partial class Plugin
+    public partial class Plugin
 	{
 		private void AddBloodBoost()
 		{

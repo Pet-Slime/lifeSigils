@@ -2,10 +2,11 @@
 using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
+using lifeSigils.Managers;
 
 namespace lifeSigils.cards
 {
-	public static class fungal_ant
+    public static class fungal_ant
 	{
 		public static void AddCard()
 		{
@@ -27,7 +28,7 @@ namespace lifeSigils.cards
 
 			List<Ability> Abilities = new List<Ability>();
 			Abilities.Add(ability_FungalInfection.ability);
-			Abilities.Add(SigilUtils.GetCustomAbility("extraVoid.inscryption.voidSigils", "Possessor"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Possessor"));
 
 			List<Trait> Traits = new List<Trait>();
 			Traits.Add(Trait.Ant);
@@ -58,8 +59,8 @@ namespace lifeSigils.cards
 				energyCost: energyCost
 				);
 			newCard.description = description;
-			newCard.specialAbilities = specialAbilities;
-			newCard.specialStatIcon = SpecialStatIcon.Ants;
+			newCard.AddSpecialAbilities(SpecialTriggeredAbility.Ant);
+			newCard.SetStatIcon(SpecialStatIcon.Ants);
 			newCard.SetExtendedProperty("LifeMoneyCost", 4);
 			CardManager.Add("lifepack", newCard);
 		}

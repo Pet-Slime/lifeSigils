@@ -2,12 +2,14 @@
 using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
+using lifeSigils.Managers;
 
 namespace lifeSigils.cards
 {
-	public static class Calyptra
+    public static class Calyptra
 	{
-		public static void AddCard()
+
+        public static void AddCard()
 		{
 			string name = "lifepack_Calyptra";
 			string displayName = "Calyptra Moth";
@@ -27,7 +29,7 @@ namespace lifeSigils.cards
 
 			List<Ability> Abilities = new List<Ability>();
 			Abilities.Add(Ability.Flying);
-			Abilities.Add(SigilUtils.GetCustomAbility("extraVoid.inscryption.voidSigils", "Draw Blood"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Draw Blood"));
 
 			List<Trait> Traits = new List<Trait>();
 

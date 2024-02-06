@@ -16,7 +16,7 @@ namespace lifeSigils
 		{
 			if (__instance.OnBoard && __instance.Info.IsOfTribe(Tribe.Canine))
 			{
-				foreach (CardSlot slotState in Singleton<BoardManager>.Instance.allSlots)
+				foreach (CardSlot slotState in Singleton<BoardManager>.Instance.AllSlots)
 				{
 					if (slotState.Card != null && slotState.Card.Info.name == "lifepack_Blood_Fea")
 					{

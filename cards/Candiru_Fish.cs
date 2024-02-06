@@ -2,10 +2,11 @@
 using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
+using lifeSigils.Managers;
 
 namespace lifeSigils.cards
 {
-	public static class Candiru_Fish
+    public static class Candiru_Fish
 	{
 		public static void AddCard()
 		{
@@ -26,7 +27,7 @@ namespace lifeSigils.cards
 
 			List<Ability> Abilities = new List<Ability>();
 			Abilities.Add(Ability.Submerge);
-			Abilities.Add(SigilUtils.GetCustomAbility("extraVoid.inscryption.voidSigils", "Schooling"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Schooling"));
 
 			List<Trait> Traits = new List<Trait>();
 
