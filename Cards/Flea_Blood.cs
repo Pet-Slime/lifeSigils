@@ -5,15 +5,14 @@ using InscryptionAPI.Card;
 using InscryptionAPI.Guid;
 using lifeSigils.Managers;
 
-namespace lifeSigils.cards
+namespace lifeSigils.Cards
 {
-    public static class Blood_Flea
+    public static class Flea_Blood
 	{
-		public static readonly CardMetaCategory SIDE_DECK_CATEGORY = GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.sidedecks", "SideDeck");
 
 		public static void AddCard()
 		{
-			string name = "lifepack_Blood_Fea";
+			string name = "lifepack_fea_blood";
 			string displayName = "Blood Flea";
 			string description = "A flea that spreads disease to canines, weakening them.";
 			int baseAttack = 1;
@@ -25,8 +24,11 @@ namespace lifeSigils.cards
 
 
 			List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
+            metaCategories.Add(CardMetaCategory.GBCPlayable);
+            metaCategories.Add(CardMetaCategory.GBCPack);
 
-			List<Tribe> Tribes = new List<Tribe>();
+
+            List<Tribe> Tribes = new List<Tribe>();
 			Tribes.Add(Tribe.Insect);
 
 			List<Ability> Abilities = new List<Ability>();
@@ -35,9 +37,9 @@ namespace lifeSigils.cards
 
 			List<Trait> Traits = new List<Trait>();
 
-			Texture2D DefaultTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_flea.png");
-			Texture2D eTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_flea_e.png");
-			Texture2D pTexture = SigilUtils.GetTextureFromPath("Artwork/pixelportrait_flea.png");
+			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_fea_blood.png");
+			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_fea_blood_e.png");
+			Texture2D pTexture = SigilUtils.Texture_Helper("pixelportrait_flea.png");
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(
 				InternalName: name,

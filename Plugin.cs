@@ -1,26 +1,22 @@
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
-using System;
 using InscryptionAPI.Card;
-using InscryptionAPI.Ascension;
-using InscryptionAPI.Helpers;
-using DiskCardGame;
-using UnityEngine;
-using Resources = lifeSigils.Artwork.Artwork;
 namespace lifeSigils
 {
 	[BepInPlugin(PluginGuid, PluginName, PluginVersion)]
 	[BepInDependency(APIGUID, BepInDependency.DependencyFlags.HardDependency)]
 	[BepInDependency(SigilGUID, BepInDependency.DependencyFlags.SoftDependency)]
 	[BepInDependency(StarterdeckGUID, BepInDependency.DependencyFlags.SoftDependency)]
-	public partial class Plugin : BaseUnityPlugin
+    [BepInDependency(TotemGUID, BepInDependency.DependencyFlags.SoftDependency)]
+    public partial class Plugin : BaseUnityPlugin
     {
 		public const string APIGUID = "cyantist.inscryption.api";
 		public const string SigilGUID = "extraVoid.inscryption.voidSigils";
 		public const string StarterdeckGUID = "zorro.inscryption.infiniscryption.sidedecks";
 		public const string PluginGuid = "extraVoid.inscryption.void_life_pack";
-		private const string PluginName = "Void Life and Foil Costing Pack";
+        public const string TotemGUID = "Lily.BOT";
+        private const string PluginName = "Void Life and Foil Costing Pack";
 		private const string PluginVersion = "3.0.0";
 
 		public static string Directory;
@@ -41,39 +37,42 @@ namespace lifeSigils
 			AddFungalInfection();
 			AddBloodBoost();
 
-			///Albino familiar
-			///black dog
-			///bone
-			///bone worm
-			cards.Caladrius.AddCard();
-			cards.Calyptra.AddCard();
-			cards.Candiru_Fish.AddCard();
-			///Cabra
-			cards.Coin_Crow.AddCard();
-			cards.DiceMouse.AddCard();
-			///Disease Cow
-			///Finch
-			///Salamander
-			cards.Blood_Flea.AddCard();
-			cards.fungal_ant.AddCard();
-			cards.Greedy_Lizard.AddCard();
-			///Cotten Tail
-			///mantis
-			///snail
-			///lampray
-			///neko
-			///misquito
-			cards.mutilated_sow.AddCard();
-			cards.plague_bird.AddCard();
-			///Rabbid dog
-			///shitting cow
-			///sick lion
-			cards.Snallygaster.AddCard();
-			///Starving dog
-			cards.Tamed_Crow.AddCard();
-			///Tick
-			cards.Vampire_Bat.AddCard();
-			///wasting deer
+			Cards.Ant_Fungal.AddCard();
+			Cards.Bat_Vampire.AddCard();
+			Cards.Bird_Caladrius.AddCard();
+			Cards.Bird_Finch.AddCard();
+			Cards.Bird_Plague.AddCard();
+			Cards.Bone.AddCard();
+			Cards.Chupacabra.AddCard();
+			Cards.Cow_Diseased.AddCard();
+			Cards.Cow_Mutilated.AddCard();
+			Cards.Cow_Shitting.AddCard();
+			Cards.Crow_Coin.AddCard();
+			Cards.Crow_Tamed.AddCard();
+			Cards.Deer_Wasting.AddCard();
+			Cards.Dog_Black.AddCard();
+			Cards.Dog_Familiar.AddCard();
+			Cards.Dog_Rabid.AddCard();
+			Cards.Dog_Starving.AddCard();
+			Cards.Feline_Lion.AddCard();
+			Cards.Feline_Maneki_Neko.AddCard();
+			Cards.Fish_Candiru.AddCard();
+			Cards.Fish_Lamprey.AddCard();
+			Cards.Flea_Blood.AddCard();
+			Cards.Lizard_Greedy.AddCard();
+			Cards.Lizard_Salamander.AddCard();
+			Cards.Mantis_Infested.AddCard();
+			Cards.Misquito.AddCard();
+			Cards.Moth_Calyptra.AddCard();
+			Cards.Mouse_Dice.AddCard();
+			Cards.Rabbit_horned.AddCard();
+			Cards.Snail_Infested.AddCard();
+			Cards.Snallygaster.AddCard();
+			Cards.Tick.AddCard();
+			Cards.Worm_Bone.AddCard();
+
+			Encounters.BirdRush.AddEncounter();
+			Encounters.DogHouse.AddEncounter();
 		}
 
 		private void Start()

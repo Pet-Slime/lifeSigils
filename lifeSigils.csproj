@@ -29,7 +29,7 @@
 
 	<ItemGroup>
 		<Reference Include="Infiniscryption.PackManager">
-			<HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\BepInEx\plugins\other\Infiniscryption.PackManager.dll</HintPath>
+		  <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\Inscryption\profiles\Test\BepInEx\plugins\Infiniscryption-Pack_Management_API\Infiniscryption.PackManager.dll</HintPath>
 		</Reference>
 		<Reference Include="InscryptionAPI">
 			<HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\Inscryption\profiles\Test\BepInEx\plugins\API_dev-API\InscryptionAPI.dll</HintPath>
@@ -57,10 +57,73 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Cards\lifecost_Albino_Familiar_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_black_dog_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_bone_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_bone_worm_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_Chupacabra_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_diseased_cow_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_finch_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_fire_salamander_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_horn_cottentail_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_infested_mantis_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_Infested_Snail_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_Lamprey_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_maneki_neko_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_misquote_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_Rabid_Canine_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_shitting_bull_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_Sick_Lion_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_starving_dog_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_tick_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Cards\lifecost_Wasting_deer_card.jldr2">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
   <Target Name="CopyDLLs" AfterTargets="Build">
     <Message Text="Executing CopyDLLs task" Importance="High" />
 
-    <Copy SourceFiles="$(TargetDir)$(ProjectName).dll;" DestinationFolder="C:\Program Files (x86)\Steam\steamapps\common\Inscryption\BepInEx\plugins\Void_Slime-Void_Life_and_Currency_Cardpack\plugins" />
+    <Copy SourceFiles="$(TargetDir)$(ProjectName).dll;" DestinationFolder="C:\Users\gravi\AppData\Roaming\r2modmanPlus-local\Inscryption\profiles\Test\BepInEx\plugins\Void_Slime-Void_Life_and_Currency_Cardpack" />
     
     <Copy Condition="Exists('C:\DEVELOPER\InscryptionMods\lib\')" SourceFiles="$(TargetDir)$(ProjectName).dll" DestinationFolder="C:\DEVELOPER\InscryptionMods\lib\" />
 

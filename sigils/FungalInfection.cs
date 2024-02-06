@@ -2,7 +2,6 @@
 using DiskCardGame;
 using lifeSigils.Managers;
 using UnityEngine;
-using Resources = lifeSigils.Artwork.Artwork;
 
 namespace lifeSigils
 {
@@ -14,8 +13,8 @@ namespace lifeSigils
 			const string rulebookName = "Fungal Infection (Ants)";
 			const string rulebookDescription = "[creature] will cause ants to become fungal ants during the endphase.";
             const string LearnDialogue = "The infection will spread.";
-            Texture2D tex_a1 = SigilUtils.LoadTextureFromResource(Resources.void_antSpread);
-            Texture2D tex_a2 = SigilUtils.LoadTextureFromResource(Resources.void_antSpread);
+            Texture2D tex_a1 = SigilUtils.Texture_Helper("void_antSpread.png");
+            Texture2D tex_a2 = SigilUtils.Texture_Helper("void_antSpread_pixel.png");
             int powerlevel = 0;
             bool LeshyUsable = false;
             bool part1Shops = false;

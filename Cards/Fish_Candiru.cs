@@ -3,14 +3,15 @@ using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
 using lifeSigils.Managers;
+using InscryptionAPI.Guid;
 
-namespace lifeSigils.cards
+namespace lifeSigils.Cards
 {
-    public static class Candiru_Fish
+    public static class Fish_Candiru
 	{
 		public static void AddCard()
 		{
-			string name = "lifepack_Candiru_Fish";
+			string name = "lifepack_fish_candiru";
 			string displayName = "Candiru Fish";
 			string description = "A parasitic fish that feasts on blood.";
 			int baseAttack = 1;
@@ -24,15 +25,20 @@ namespace lifeSigils.cards
 			metaCategories.Add(CardMetaCategory.ChoiceNode);
 
 			List<Tribe> Tribes = new List<Tribe>();
+            if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey(Plugin.TotemGUID))
+            {
+                Plugin.Log.LogMessage("Lily Totems found, Candiru Fish is now aquatic");
+                Tribes.Add(GuidManager.GetEnumValue<Tribe>("Lily.BOT", "aquatic"));
+            }
 
-			List<Ability> Abilities = new List<Ability>();
+            List<Ability> Abilities = new List<Ability>();
 			Abilities.Add(Ability.Submerge);
 			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Schooling"));
 
 			List<Trait> Traits = new List<Trait>();
 
-			Texture2D DefaultTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_Candiru_Fish.png");
-			Texture2D eTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_Candiru_Fish_e.png");
+			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_fish_candiru.png");
+			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_fish_candiru_e.png");
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(
 				InternalName: name,

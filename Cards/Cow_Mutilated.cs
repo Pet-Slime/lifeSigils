@@ -4,34 +4,41 @@ using UnityEngine;
 using InscryptionAPI.Card;
 using lifeSigils.Managers;
 
-namespace lifeSigils.cards
+namespace lifeSigils.Cards
 {
-    public static class Vampire_Bat
+    public static class Cow_Mutilated
 	{
 		public static void AddCard()
 		{
-			string name = "lifepack_Vampire_Bat";
-			string displayName = "Vampire Bat";
-			string description = "Vampire Bat";
-			int baseAttack = 1;
+			string name = "lifepack_cow_mutilated";
+			string displayName = "Mutilated Sow";
+			string description = "The poor sow, damaged, hurt, broken.";
+			int baseAttack = 0;
 			int baseHealth = 3;
 			int bloodCost = 0;
 			int boneCost = 0;
 			int energyCost = 0;
 
 			List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
-			metaCategories.Add(CardMetaCategory.ChoiceNode);
 			metaCategories.Add(CardMetaCategory.TraderOffer);
+			metaCategories.Add(CardMetaCategory.ChoiceNode);
 
 			List<Tribe> Tribes = new List<Tribe>();
+			Tribes.Add(Tribe.Hooved);
 
 			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(ability_BloodBoost.ability);
+			Abilities.Add(Ability.CorpseEater);
+			Abilities.Add(Ability.ExplodeOnDeath);
 
 			List<Trait> Traits = new List<Trait>();
+			Traits.Add(Trait.Goat);
 
-			Texture2D DefaultTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_Vampire_Bat.png");
-			Texture2D eTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_Vampire_Bat_e.png");
+			List<CardAppearanceBehaviour.Appearance> appearanceBehaviour = new List<CardAppearanceBehaviour.Appearance>();
+			appearanceBehaviour.Add(CardAppearanceBehaviour.Appearance.SexyGoat);
+
+			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_cow_mutilated.png");
+			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_cow_mutilated_e.png");
+			Texture2D altTexture = SigilUtils.Texture_Helper("lifepack_cow_mutilated_a.png");
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(
 				InternalName: name,
@@ -50,7 +57,8 @@ namespace lifeSigils.cards
 				energyCost: energyCost
 				);
 			newCard.description = description;
-			newCard.SetExtendedProperty("LifeMoneyCost", 8);
+			newCard.SetAltPortrait(altTexture);
+			newCard.SetExtendedProperty("LifeMoneyCost", 3);
 			CardManager.Add("lifepack", newCard);
 		}
 	}

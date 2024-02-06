@@ -19,69 +19,69 @@ namespace lifeSigils.Encounters
             List<Ability> list2 = new List<Ability>();
             list2.Add(Ability.Flying);
             bool regionLocked = true;
-            List<CardInfo> randomReplacementCards = EncounterHelper.AddRandomCards("RavenEgg", "Sparrow", "Raven");
+            List<CardInfo> randomReplacementCards = EncounterHelper.AddRandomCards("RavenEgg", "Sparrow", "Raven", "lifepack_bird_finch", "lifepack_bird_plague");
             List<List<EncounterBlueprintData.CardBlueprint>> list3 = new List<List<EncounterBlueprintData.CardBlueprint>>();
             List<EncounterBlueprintData.CardBlueprint> list4 = new List<EncounterBlueprintData.CardBlueprint>();
             list4.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_Caladrius")
+                card = CardLoader.GetCardByName("lifepack_bird_caladrius")
             });
             list4.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_Caladrius"),
+                card = CardLoader.GetCardByName("lifepack_bird_caladrius"),
                 difficultyReplace = true,
                 difficultyReq = 18,
-                replacement = CardLoader.GetCardByName("lifepack_finch"),
+                replacement = CardLoader.GetCardByName("lifepack_bird_finch"),
                 randomReplaceChance = 10
             });
             List<EncounterBlueprintData.CardBlueprint> item = new List<EncounterBlueprintData.CardBlueprint>();
             List<EncounterBlueprintData.CardBlueprint> list5 = new List<EncounterBlueprintData.CardBlueprint>();
             list5.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_Caladrius"),
+                card = CardLoader.GetCardByName("lifepack_bird_caladrius"),
                 difficultyReplace = true,
                 difficultyReq = 13,
-                replacement = CardLoader.GetCardByName("lifepack_Plague_Bird"),
+                replacement = CardLoader.GetCardByName("lifepack_bird_plague"),
                 randomReplaceChance = 10
             });
             list5.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_Caladrius"),
+                card = CardLoader.GetCardByName("lifepack_bird_caladrius"),
                 difficultyReplace = true,
                 difficultyReq = 18,
-                replacement = CardLoader.GetCardByName("lifepack_finch"),
+                replacement = CardLoader.GetCardByName("lifepack_bird_finch"),
                 randomReplaceChance = 10
             });
             List<EncounterBlueprintData.CardBlueprint> item2 = new List<EncounterBlueprintData.CardBlueprint>();
             List<EncounterBlueprintData.CardBlueprint> list6 = new List<EncounterBlueprintData.CardBlueprint>();
             list6.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_Caladrius")
+                card = CardLoader.GetCardByName("lifepack_bird_caladrius")
             });
             list6.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_Caladrius"),
+                card = CardLoader.GetCardByName("lifepack_bird_caladrius"),
                 difficultyReplace = true,
                 difficultyReq = 13,
-                replacement = CardLoader.GetCardByName("lifepack_finch"),
+                replacement = CardLoader.GetCardByName("lifepack_bird_finch"),
                 randomReplaceChance = 10
             });
             List<EncounterBlueprintData.CardBlueprint> item3 = new List<EncounterBlueprintData.CardBlueprint>();
             List<EncounterBlueprintData.CardBlueprint> list7 = new List<EncounterBlueprintData.CardBlueprint>();
             list7.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_Caladrius"),
+                card = CardLoader.GetCardByName("lifepack_bird_caladrius"),
                 difficultyReplace = true,
                 difficultyReq = 18,
-                replacement = CardLoader.GetCardByName("lifepack_finch"),
+                replacement = CardLoader.GetCardByName("lifepack_bird_plague"),
                 randomReplaceChance = 10
             });
             list7.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_Caladrius"),
+                card = CardLoader.GetCardByName("lifepack_bird_caladrius"),
                 difficultyReplace = true,
                 difficultyReq = 13,
-                replacement = CardLoader.GetCardByName("lifepack_Plague_Bird"),
+                replacement = CardLoader.GetCardByName("lifepack_bird_plague"),
                 randomReplaceChance = 10
             });
             list3.Add(list4);

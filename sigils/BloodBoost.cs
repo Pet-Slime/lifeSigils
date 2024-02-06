@@ -2,7 +2,6 @@
 using DiskCardGame;
 using lifeSigils.Managers;
 using UnityEngine;
-using Resources = lifeSigils.Artwork.Artwork;
 
 namespace lifeSigils
 {
@@ -14,14 +13,15 @@ namespace lifeSigils
 			const string rulebookName = "Blood Boost";
 			const string rulebookDescription = "When played, [creature] will gain power based on the blood cost of all the opponent's cards.";
             const string LearnDialogue = "It craves their blood";
-            Texture2D tex_a1 = SigilUtils.LoadTextureFromResource(Resources.void_BloodBoost);
+            Texture2D tex_a1 = SigilUtils.Texture_Helper("void_BloodBoost.png");
+            Texture2D tex_a2 = SigilUtils.Texture_Helper("void_BloodBoost_pixel.png");
             int powerlevel = 4;
             bool LeshyUsable = false;
             bool part1Shops = true;
             bool canStack = false;
 
             // set ability to behaviour class
-            ability_BloodBoost.ability = SigilUtils.CreateAbilityWithDefaultSettings(rulebookName, rulebookDescription, typeof(ability_BloodBoost), tex_a1, LearnDialogue,
+            ability_BloodBoost.ability = SigilUtils.CreateAbilityWithDefaultSettingsKCM(rulebookName, rulebookDescription, typeof(ability_BloodBoost), tex_a1, tex_a2, LearnDialogue,
                                                                                     true, powerlevel, LeshyUsable, part1Shops, canStack).ability;
         }
 	}

@@ -4,13 +4,13 @@ using UnityEngine;
 using InscryptionAPI.Card;
 using lifeSigils.Managers;
 
-namespace lifeSigils.cards
+namespace lifeSigils.Cards
 {
     public static class Snallygaster
 	{
 		public static void AddCard()
 		{
-			string name = "lifepack_Snallygaster";
+			string name = "lifepack_snallygaster";
 			string displayName = "Snallygaster";
 			string description = "It comes from the shadows, attacking all, sucking all the blood out of them.";
 			int baseAttack = 1;
@@ -20,7 +20,6 @@ namespace lifeSigils.cards
 			int energyCost = 0;
 
 			List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
-			metaCategories.Add(CardMetaCategory.Rare);
 
 			List<Tribe> Tribes = new List<Tribe>();
 			Tribes.Add(Tribe.Bird);
@@ -34,8 +33,8 @@ namespace lifeSigils.cards
 			List<SpecialTriggeredAbility> specialAbilities = new List<SpecialTriggeredAbility>();
 			specialAbilities.Add(GainAllstrikeOnDraw.specialAbility);
 
-			Texture2D DefaultTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_Snallygaster.png");
-			Texture2D eTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_Snallygaster_e.png");
+			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_snallygaster.png");
+			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_snallygaster_e.png");
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(
 				InternalName: name,
@@ -54,7 +53,7 @@ namespace lifeSigils.cards
 				energyCost: energyCost
 				);
 			newCard.description = description;
-			newCard.specialAbilities = specialAbilities;
+            newCard.AddSpecialAbilities(GainAllstrikeOnDraw.specialAbility);
 			newCard.SetRare();
 			newCard.SetExtendedProperty("LifeMoneyCost", 11);
 			CardManager.Add("lifepack", newCard);

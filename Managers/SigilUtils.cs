@@ -6,6 +6,7 @@ using DiskCardGame;
 using UnityEngine;
 using System;
 using static System.IO.File;
+using InscryptionAPI.Helpers;
 
 namespace lifeSigils.Managers
 {
@@ -102,11 +103,9 @@ namespace lifeSigils.Managers
         }
 
 
-        public static Texture2D LoadTextureFromResource(byte[] resourceFile)
+        public static Texture2D Texture_Helper(string Path)
         {
-            var texture = new Texture2D(2, 2);
-            texture.LoadImage(resourceFile);
-            return texture;
+            return TextureHelper.GetImageAsTexture(Path, typeof(Plugin).Assembly);
         }
 
         public static string GetFullPathOfFile(string fileToLookFor)

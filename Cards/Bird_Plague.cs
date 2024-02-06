@@ -4,43 +4,37 @@ using UnityEngine;
 using InscryptionAPI.Card;
 using lifeSigils.Managers;
 
-namespace lifeSigils.cards
+namespace lifeSigils.Cards
 {
-    public static class fungal_ant
+    public static class Bird_Plague
 	{
 		public static void AddCard()
 		{
-			string name = "lifepack_Fungal_Ant";
-			string displayName = "Fungal Ant";
-			string description = "Be careful, the fungus will spread to all ants.";
-			int baseAttack = 0;
-			int baseHealth = 2;
+			string name = "lifepack_bird_plague";
+			string displayName = "Plague Bird";
+			string description = "What better laboratory than the blood-soaked battlefield?";
+			int baseAttack = 1;
+			int baseHealth = 7;
 			int bloodCost = 0;
-			int boneCost = 0;
+			int boneCost = 4;
 			int energyCost = 0;
 
 			List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
-			metaCategories.Add(CardMetaCategory.TraderOffer);
-			metaCategories.Add(CardMetaCategory.ChoiceNode);
 
 			List<Tribe> Tribes = new List<Tribe>();
-			Tribes.Add(Tribe.Insect);
+			Tribes.Add(Tribe.Bird);
 
 			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(ability_FungalInfection.ability);
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Possessor"));
+			Abilities.Add(Ability.Flying);
+			Abilities.Add(Ability.ExplodeOnDeath);
 
 			List<Trait> Traits = new List<Trait>();
-			Traits.Add(Trait.Ant);
 
 			List<SpecialTriggeredAbility> specialAbilities = new List<SpecialTriggeredAbility>();
-			specialAbilities.Add(SpecialTriggeredAbility.Ant);
+			specialAbilities.Add(CureAllNegativeSpecialAbility.specialAbility);
 
-
-			Texture2D DefaultTexture = SigilUtils.LoadTextureFromResource(lifeSigils.Artwork.Artwork.lifecost_fungal_ant);
-
-			Texture2D eTexture = SigilUtils.LoadTextureFromResource(lifeSigils.Artwork.Artwork.lifecost_fungal_ant_e);
-
+			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_bird_plague.png");
+			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_bird_plague_e.png");
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(
 				InternalName: name,
@@ -59,8 +53,8 @@ namespace lifeSigils.cards
 				energyCost: energyCost
 				);
 			newCard.description = description;
-			newCard.AddSpecialAbilities(SpecialTriggeredAbility.Ant);
-			newCard.SetStatIcon(SpecialStatIcon.Ants);
+            newCard.AddSpecialAbilities(CureAllNegativeSpecialAbility.specialAbility);
+			newCard.SetRare();
 			newCard.SetExtendedProperty("LifeMoneyCost", 4);
 			CardManager.Add("lifepack", newCard);
 		}

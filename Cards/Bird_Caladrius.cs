@@ -4,18 +4,17 @@ using UnityEngine;
 using InscryptionAPI.Card;
 using lifeSigils.Managers;
 
-namespace lifeSigils.cards
+namespace lifeSigils.Cards
 {
-    public static class Calyptra
+    public static class Bird_Caladrius
 	{
-
-        public static void AddCard()
+		public static void AddCard()
 		{
-			string name = "lifepack_Calyptra";
-			string displayName = "Calyptra Moth";
-			string description = "A moth that has gained a taste for blood. It can continue it's cycle of life and death as long as it feels.";
+			string name = "lifepack_bird_caladrius";
+			string displayName = "Caladrius";
+			string description = "It will take in the pain of others to heal them.";
 			int baseAttack = 1;
-			int baseHealth = 1;
+			int baseHealth = 2;
 			int bloodCost = 0;
 			int boneCost = 0;
 			int energyCost = 0;
@@ -25,17 +24,16 @@ namespace lifeSigils.cards
 			metaCategories.Add(CardMetaCategory.ChoiceNode);
 
 			List<Tribe> Tribes = new List<Tribe>();
-			Tribes.Add(Tribe.Insect);
+			Tribes.Add(Tribe.Bird);
 
 			List<Ability> Abilities = new List<Ability>();
 			Abilities.Add(Ability.Flying);
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Draw Blood"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Disease Absorbtion"));
 
 			List<Trait> Traits = new List<Trait>();
 
-			Texture2D DefaultTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_Calyptra.png");
-			Texture2D eTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_Calyptra_e.png");
-
+			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_bird_caladrius.png");
+			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_bird_caladrius_e.png");
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(
 				InternalName: name,
@@ -54,7 +52,7 @@ namespace lifeSigils.cards
 				energyCost: energyCost
 				);
 			newCard.description = description;
-			newCard.SetExtendedProperty("LifeMoneyCost", 3);
+			newCard.SetExtendedProperty("LifeMoneyCost", 4);
 			CardManager.Add("lifepack", newCard);
 		}
 	}

@@ -4,36 +4,39 @@ using UnityEngine;
 using InscryptionAPI.Card;
 using lifeSigils.Managers;
 
-namespace lifeSigils.cards
+namespace lifeSigils.Cards
 {
-    public static class Caladrius
+    public static class Crow_Coin
 	{
 		public static void AddCard()
 		{
-			string name = "lifepack_Caladrius";
-			string displayName = "Caladrius";
-			string description = "It will take in the pain of others to heal them.";
+			string name = "lifepack_crow_coin";
+			string displayName = "Thieving Crow";
+			string description = "This thieving crow will strike at your foes, if you pay it to...";
 			int baseAttack = 1;
-			int baseHealth = 3;
+			int baseHealth = 2;
 			int bloodCost = 0;
 			int boneCost = 0;
 			int energyCost = 0;
 
 			List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
-			metaCategories.Add(CardMetaCategory.TraderOffer);
-			metaCategories.Add(CardMetaCategory.ChoiceNode);
+            metaCategories.Add(CardMetaCategory.GBCPlayable);
+            metaCategories.Add(CardMetaCategory.GBCPack);
 
-			List<Tribe> Tribes = new List<Tribe>();
+            List<Tribe> Tribes = new List<Tribe>();
 			Tribes.Add(Tribe.Bird);
 
 			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(Ability.Flying);
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Disease Absorbtion"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.LifeCost", "Cash Converter"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Thief"));
 
 			List<Trait> Traits = new List<Trait>();
 
-			Texture2D DefaultTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_Caladrius.png");
-			Texture2D eTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_Caladrius_e.png");
+			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_crow_coin.png");
+
+			Texture2D pixelTexture = SigilUtils.Texture_Helper("pixelportrait_coin_crow.png");
+
+			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_crow_coin_e.png");
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(
 				InternalName: name,
@@ -42,7 +45,7 @@ namespace lifeSigils.cards
 				health: baseHealth,
 				texture_base: DefaultTexture,
 				texture_emission: eTexture,
-				texture_pixel: null,
+				texture_pixel: pixelTexture,
 				cardMetaCategories: metaCategories,
 				tribes: Tribes,
 				traits: Traits,
@@ -52,6 +55,7 @@ namespace lifeSigils.cards
 				energyCost: energyCost
 				);
 			newCard.description = description;
+			newCard.SetRare();
 			newCard.SetExtendedProperty("LifeMoneyCost", 4);
 			CardManager.Add("lifepack", newCard);
 		}

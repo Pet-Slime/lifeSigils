@@ -3,18 +3,19 @@ using DiskCardGame;
 using UnityEngine;
 using InscryptionAPI.Card;
 using lifeSigils.Managers;
+using InscryptionAPI.Guid;
 
-namespace lifeSigils.cards
+namespace lifeSigils.Cards
 {
-    public static class Greedy_Lizard
+    public static class Mouse_Dice
 	{
 		public static void AddCard()
 		{
-			string name = "lifepack_Greedy_Lizard";
-			string displayName = "Hoarding Lizard";
-			string description = "It will bring you wealth if you can pay it's price.";
-			int baseAttack = 2;
-			int baseHealth = 2;
+			string name = "lifepack_mouse_dice";
+			string displayName = "Dice Mouse";
+			string description = "Will you take a chance and roll it's dice?";
+			int baseAttack = 0;
+			int baseHealth = 1;
 			int bloodCost = 0;
 			int boneCost = 0;
 			int energyCost = 0;
@@ -23,16 +24,19 @@ namespace lifeSigils.cards
 			metaCategories.Add(CardMetaCategory.Rare);
 
 			List<Tribe> Tribes = new List<Tribe>();
-			Tribes.Add(Tribe.Reptile);
+            if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey(Plugin.TotemGUID))
+            {
+                Plugin.Log.LogMessage("Lily Totems found, Dice Mouse is now rodent");
+                Tribes.Add(GuidManager.GetEnumValue<Tribe>("Lily.BOT", "rodent"));
+            }
 
-			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.LifeCost", "Life Converter"));
+            List<Ability> Abilities = new List<Ability>();
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.LifeCost", "Die Roll"));
 
 			List<Trait> Traits = new List<Trait>();
 
-
-			Texture2D DefaultTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_greedy_lizard.png");
-			Texture2D eTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_greedy_lizard_e.png");
+			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_mouse_dice.png");
+			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_mouse_dice_e.png");
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(
 				InternalName: name,
@@ -52,7 +56,7 @@ namespace lifeSigils.cards
 				);
 			newCard.description = description;
 			newCard.SetRare();
-			newCard.SetExtendedProperty("MoneyCost", 5);
+			newCard.SetExtendedProperty("LifeMoneyCost", 2);
 			CardManager.Add("lifepack", newCard);
 		}
 	}

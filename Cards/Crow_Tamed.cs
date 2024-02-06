@@ -5,15 +5,15 @@ using InscryptionAPI.Card;
 using InscryptionAPI.Guid;
 using lifeSigils.Managers;
 
-namespace lifeSigils.cards
+namespace lifeSigils.Cards
 {
-    public static class Tamed_Crow
+    public static class Crow_Tamed
 	{
 		public static readonly CardMetaCategory SIDE_DECK_CATEGORY = GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.sidedecks", "SideDeck");
 
 		public static void AddCard()
 		{
-			string name = "lifepack_Tamed_Crow";
+			string name = "lifepack_crow_tamed";
 			string displayName = "Tamed Crow";
 			string description = "A crow, tamed to find gold.";
 			int baseAttack = 0;
@@ -47,9 +47,9 @@ namespace lifeSigils.cards
 
 			List<Trait> Traits = new List<Trait>();
 
-			Texture2D DefaultTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_tamed_crow.png");
-			Texture2D pixelTexture = SigilUtils.GetTextureFromPath("Artwork/pixelportrait_tamed_crow.png");
-			Texture2D eTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_tamed_crow_e.png");
+			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_crow_tamed.png");
+			Texture2D pixelTexture = SigilUtils.Texture_Helper("pixelportrait_tamed_crow.png");
+			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_crow_tamed_e.png");
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(
 				InternalName: name,

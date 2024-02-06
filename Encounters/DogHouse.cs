@@ -18,78 +18,79 @@ namespace lifeSigils.Encounters
             list.Add(Tribe.Canine);
             List<Ability> redundant = new List<Ability>();
             bool regionLocked = true;
-            List<CardInfo> randomReplacementCards = EncounterHelper.AddRandomCards("lifepack_Albino_Familiar", "Bloodhound");
+            List<CardInfo> randomReplacementCards = EncounterHelper.AddRandomCards("lifepack_dog_familiar", "Bloodhound", "lifepack_dog_black", "lifepack_dog_rabid");
             List<List<EncounterBlueprintData.CardBlueprint>> list2 = new List<List<EncounterBlueprintData.CardBlueprint>>();
             List<EncounterBlueprintData.CardBlueprint> list3 = new List<EncounterBlueprintData.CardBlueprint>();
             list3.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog")
+                card = CardLoader.GetCardByName("lifepack_dog_starving")
             });
             list3.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog")
+                card = CardLoader.GetCardByName("lifepack_dog_starving")
             });
             List<EncounterBlueprintData.CardBlueprint> list4 = new List<EncounterBlueprintData.CardBlueprint>();
             list4.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog"),
+                card = CardLoader.GetCardByName("lifepack_dog_starving"),
                 randomReplaceChance = 50
             });
             List<EncounterBlueprintData.CardBlueprint> list5 = new List<EncounterBlueprintData.CardBlueprint>();
             list5.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog"),
+                card = CardLoader.GetCardByName("lifepack_dog_starving"),
                 randomReplaceChance = 50
             });
             List<EncounterBlueprintData.CardBlueprint> list6 = new List<EncounterBlueprintData.CardBlueprint>();
             list6.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog"),
+                card = CardLoader.GetCardByName("lifepack_dog_starving"),
                 randomReplaceChance = 50
             });
             list6.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog"),
+                card = CardLoader.GetCardByName("lifepack_dog_starving"),
                 randomReplaceChance = 50
             });
             List<EncounterBlueprintData.CardBlueprint> list7 = new List<EncounterBlueprintData.CardBlueprint>();
             list7.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog"),
+                card = CardLoader.GetCardByName("lifepack_dog_starving"),
                 randomReplaceChance = 50
             });
             list7.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog"),
+                card = CardLoader.GetCardByName("lifepack_dog_starving"),
                 randomReplaceChance = 50
             });
             List<EncounterBlueprintData.CardBlueprint> list8 = new List<EncounterBlueprintData.CardBlueprint>();
             list8.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog"),
+                card = CardLoader.GetCardByName("lifepack_dog_starving"),
                 randomReplaceChance = 50
             });
+
             List<EncounterBlueprintData.CardBlueprint> list9 = new List<EncounterBlueprintData.CardBlueprint>();
             list9.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog"),
+                card = CardLoader.GetCardByName("lifepack_dog_starving"),
                 randomReplaceChance = 50
             });
             list9.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog"),
+                card = CardLoader.GetCardByName("lifepack_dog_starving"),
                 randomReplaceChance = 50
             });
             List<EncounterBlueprintData.CardBlueprint> list10 = new List<EncounterBlueprintData.CardBlueprint>();
             list10.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog"),
+                card = CardLoader.GetCardByName("lifepack_dog_starving"),
                 randomReplaceChance = 50
             });
             List<EncounterBlueprintData.CardBlueprint> list11 = new List<EncounterBlueprintData.CardBlueprint>();
             list11.Add(new EncounterBlueprintData.CardBlueprint
             {
-                card = CardLoader.GetCardByName("lifepack_starving_dog"),
+                card = CardLoader.GetCardByName("lifepack_dog_starving"),
                 randomReplaceChance = 50
             });
             list2.Add(list3);

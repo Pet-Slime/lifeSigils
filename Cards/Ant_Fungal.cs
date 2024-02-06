@@ -4,38 +4,42 @@ using UnityEngine;
 using InscryptionAPI.Card;
 using lifeSigils.Managers;
 
-namespace lifeSigils.cards
+namespace lifeSigils.Cards
 {
-    public static class Coin_Crow
+    public static class Ant_Fungal
 	{
 		public static void AddCard()
 		{
-			string name = "lifepack_Coin_Crow";
-			string displayName = "Thieving Crow";
-			string description = "This thieving crow will strike at your foes, if you pay it to...";
-			int baseAttack = 1;
+			string name = "lifepack_ant_fungal";
+			string displayName = "Fungal Ant";
+			string description = "Be careful, the fungus will spread to all ants.";
+			int baseAttack = 0;
 			int baseHealth = 2;
 			int bloodCost = 0;
 			int boneCost = 0;
 			int energyCost = 0;
 
 			List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
-			metaCategories.Add(CardMetaCategory.Rare);
+			metaCategories.Add(CardMetaCategory.TraderOffer);
+			metaCategories.Add(CardMetaCategory.ChoiceNode);
 
 			List<Tribe> Tribes = new List<Tribe>();
-			Tribes.Add(Tribe.Bird);
+			Tribes.Add(Tribe.Insect);
 
 			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.LifeCost", "Cash Converter"));
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Thief"));
+			Abilities.Add(ability_FungalInfection.ability);
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Possessor"));
 
 			List<Trait> Traits = new List<Trait>();
+			Traits.Add(Trait.Ant);
 
-			Texture2D DefaultTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_coin_crow.png");
+			List<SpecialTriggeredAbility> specialAbilities = new List<SpecialTriggeredAbility>();
+			specialAbilities.Add(SpecialTriggeredAbility.Ant);
 
-			Texture2D pixelTexture = SigilUtils.GetTextureFromPath("Artwork/pixelportrait_coin_crow.png");
 
-			Texture2D eTexture = SigilUtils.GetTextureFromPath("Artwork/lifecost_coin_crow_e.png");
+			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_ant_fungal.png");
+			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_ant_fungal_e.png");
+
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(
 				InternalName: name,
@@ -44,7 +48,7 @@ namespace lifeSigils.cards
 				health: baseHealth,
 				texture_base: DefaultTexture,
 				texture_emission: eTexture,
-				texture_pixel: pixelTexture,
+				texture_pixel: null,
 				cardMetaCategories: metaCategories,
 				tribes: Tribes,
 				traits: Traits,
@@ -54,7 +58,8 @@ namespace lifeSigils.cards
 				energyCost: energyCost
 				);
 			newCard.description = description;
-			newCard.SetRare();
+			newCard.AddSpecialAbilities(SpecialTriggeredAbility.Ant);
+			newCard.SetStatIcon(SpecialStatIcon.Ants);
 			newCard.SetExtendedProperty("LifeMoneyCost", 4);
 			CardManager.Add("lifepack", newCard);
 		}
