@@ -53,7 +53,7 @@ namespace lifeSigils
                 if (OPCards[i].Card != null)
                 {
                     PlayableCard target = OPCards[i].Card;
-                    if (target.Info.name != "lifecost_fungal_ant" && target.Info.HasTrait(Trait.Ant))
+                    if (target.Info.name != "lifepack_ant_fungal" && target.Info.HasTrait(Trait.Ant))
                     {
                         target.Anim.LightNegationEffect();
                         crows.Anim.PlaySacrificeParticles();
@@ -63,7 +63,7 @@ namespace lifeSigils
                         yield return new WaitForSeconds(0.3f);
                         if (OPCards[i].Card == null)
                         {
-                            PlayableCard murdered = CardSpawner.SpawnPlayableCard(CardLoader.GetCardByName("lifecost_fungal_ant"));
+                            PlayableCard murdered = CardSpawner.SpawnPlayableCard(CardLoader.GetCardByName("lifepack_ant_fungal"));
                             yield return Singleton<BoardManager>.Instance.ResolveCardOnBoard(murdered, OPCards[i]);
                         }
                     }
@@ -75,7 +75,7 @@ namespace lifeSigils
                 if (PLCards[i].Card != null)
                 {
                     PlayableCard target = PLCards[i].Card;
-                    if (target.Info.name != "lifecost_fungal_ant" && target.Info.HasTrait(Trait.Ant))
+                    if (target.Info.name != "lifepack_ant_fungal" && target.Info.HasTrait(Trait.Ant))
                     {
                         target.Anim.LightNegationEffect();
                         crows.Anim.PlaySacrificeParticles();
@@ -85,7 +85,7 @@ namespace lifeSigils
                         yield return new WaitForSeconds(0.3f);
                         if (PLCards[i].Card == null)
                         {
-                            PlayableCard murdered = CardSpawner.SpawnPlayableCard(CardLoader.GetCardByName("lifecost_fungal_ant"));
+                            PlayableCard murdered = CardSpawner.SpawnPlayableCard(CardLoader.GetCardByName("lifepack_ant_fungal"));
                             yield return Singleton<BoardManager>.Instance.ResolveCardOnBoard(murdered, PLCards[i]);
                         }
                         

@@ -152,6 +152,7 @@
     <None Remove="Artwork\Cards\3D\lifepack_tick.png" />
     <None Remove="Artwork\Cards\3D\lifepack_tick_e.png" />
     <None Remove="Artwork\Cards\3D\lifepack_worm_bone.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_worm_bone_a.png" />
     <None Remove="Artwork\Cards\3D\lifepack_worm_bone_e.png" />
     <None Remove="Artwork\Cards\Pixel\pixelportrait_blank.png" />
     <None Remove="Artwork\Cards\Pixel\pixelportrait_coin_crow.png" />
@@ -239,6 +240,7 @@
     <EmbeddedResource Include="Artwork\Cards\3D\lifepack_tick.png" />
     <EmbeddedResource Include="Artwork\Cards\3D\lifepack_tick_e.png" />
     <EmbeddedResource Include="Artwork\Cards\3D\lifepack_worm_bone.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_worm_bone_a.png" />
     <EmbeddedResource Include="Artwork\Cards\3D\lifepack_worm_bone_e.png" />
     <EmbeddedResource Include="Artwork\Cards\Pixel\pixelportrait_blank.png" />
     <EmbeddedResource Include="Artwork\Cards\Pixel\pixelportrait_coin_crow.png" />

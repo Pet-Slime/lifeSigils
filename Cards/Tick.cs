@@ -48,7 +48,7 @@ namespace lifeSigils.Cards
                 health: baseHealth,
                 texture_base: DefaultTexture,
                 texture_emission: eTexture,
-                texture_pixel: null,
+                texture_pixel: pTexture,
                 cardMetaCategories: metaCategories,
                 tribes: Tribes,
                 traits: Traits,

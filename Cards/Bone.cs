@@ -29,7 +29,7 @@ namespace lifeSigils.Cards
             List<Ability> Abilities = new List<Ability>();
         
             List<Trait> Traits = new List<Trait>();
-            Traits.Add(Trait.Terrain);
+ //           Traits.Add(Trait.Terrain);
         
             Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_bone.png");
             Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_bone_e.png");

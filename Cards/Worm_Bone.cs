@@ -55,7 +55,7 @@ namespace lifeSigils.Cards
                 energyCost: energyCost
                 );
             newCard.description = description;
-            newCard.SetTail("lifepack_bone", "lifepack_worm_bone_a.png");
+            newCard.SetTail("lifepack_bone", SigilUtils.Texture_Helper("lifepack_worm_bone_a.png"));
             newCard.SetExtendedProperty("LifeMoneyCost", 4);
             CardManager.Add("lifepack", newCard);
         }

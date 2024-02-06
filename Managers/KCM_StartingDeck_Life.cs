@@ -34,9 +34,9 @@ namespace lifeSigils.Managers
             StarterDeckInfo TESTER = ScriptableObject.CreateInstance<StarterDeckInfo>();
             TESTER.title = "LIFE TESTERS";
             TESTER.iconSprite = TextureHelper.ConvertTexture(tex_a2, TextureHelper.SpriteType.StarterDeckIcon);
-            TESTER.cards = new() { CardLoader.GetCardByName("lifepack_Blood_Fea"), CardLoader.GetCardByName("lifepack_misquote"), CardLoader.GetCardByName("lifepack_tick") };
+            TESTER.cards = new() { CardLoader.GetCardByName("lifepack_fish_lamprey"), CardLoader.GetCardByName("lifepack_bone"), CardLoader.GetCardByName("lifepack_bone") };
 
-            StarterDeckManager.Add(Plugin.PluginGuid, Drinkers);
+            StarterDeckManager.Add(Plugin.PluginGuid, TESTER);
         }
     }
 }
