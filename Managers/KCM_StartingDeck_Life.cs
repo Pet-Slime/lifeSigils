@@ -19,7 +19,7 @@ namespace lifeSigils.Managers
             StarterDeckInfo Diseased = ScriptableObject.CreateInstance<StarterDeckInfo>();
             Diseased.title = "The Diseased";
             Diseased.iconSprite = TextureHelper.ConvertTexture(tex_a1, TextureHelper.SpriteType.StarterDeckIcon);
-            Diseased.cards = new() { CardLoader.GetCardByName("lifepack_horn_cottentail"), CardLoader.GetCardByName("lifepack_starving_dog"), CardLoader.GetCardByName("lifepack_Infested_Snail") };
+            Diseased.cards = new() { CardLoader.GetCardByName("lifepack_rabbit_horned"), CardLoader.GetCardByName("lifepack_dog_starving"), CardLoader.GetCardByName("lifepack_snail_infested") };
 
             StarterDeckManager.Add(Plugin.PluginGuid, Diseased);
 
@@ -27,7 +27,14 @@ namespace lifeSigils.Managers
             StarterDeckInfo Drinkers = ScriptableObject.CreateInstance<StarterDeckInfo>();
             Drinkers.title = "Blood Drinkers";
             Drinkers.iconSprite = TextureHelper.ConvertTexture(tex_a2, TextureHelper.SpriteType.StarterDeckIcon);
-            Drinkers.cards = new() { CardLoader.GetCardByName("lifepack_Blood_Fea"), CardLoader.GetCardByName("lifepack_misquote"), CardLoader.GetCardByName("lifepack_tick") };
+            Drinkers.cards = new() { CardLoader.GetCardByName("lifepack_fea_blood"), CardLoader.GetCardByName("lifepack_misquote"), CardLoader.GetCardByName("lifepack_tick") };
+
+            StarterDeckManager.Add(Plugin.PluginGuid, Drinkers);
+
+            StarterDeckInfo TESTER = ScriptableObject.CreateInstance<StarterDeckInfo>();
+            TESTER.title = "LIFE TESTERS";
+            TESTER.iconSprite = TextureHelper.ConvertTexture(tex_a2, TextureHelper.SpriteType.StarterDeckIcon);
+            TESTER.cards = new() { CardLoader.GetCardByName("lifepack_Blood_Fea"), CardLoader.GetCardByName("lifepack_misquote"), CardLoader.GetCardByName("lifepack_tick") };
 
             StarterDeckManager.Add(Plugin.PluginGuid, Drinkers);
         }

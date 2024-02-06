@@ -138,6 +138,7 @@
     <None Remove="Artwork\Cards\3D\lifepack_mantis_infested_e.png" />
     <None Remove="Artwork\Cards\3D\lifepack_misquote %282%29.png" />
     <None Remove="Artwork\Cards\3D\lifepack_misquote.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_misquote_e.png" />
     <None Remove="Artwork\Cards\3D\lifepack_moth_calyptra.png" />
     <None Remove="Artwork\Cards\3D\lifepack_moth_calyptra_e.png" />
     <None Remove="Artwork\Cards\3D\lifepack_mouse_dice.png" />
@@ -223,8 +224,8 @@
     <EmbeddedResource Include="Artwork\Cards\3D\lifepack_maneki_neko_e.png" />
     <EmbeddedResource Include="Artwork\Cards\3D\lifepack_mantis_infested.png" />
     <EmbeddedResource Include="Artwork\Cards\3D\lifepack_mantis_infested_e.png" />
-    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_misquote (2).png" />
     <EmbeddedResource Include="Artwork\Cards\3D\lifepack_misquote.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_misquote_e.png" />
     <EmbeddedResource Include="Artwork\Cards\3D\lifepack_moth_calyptra.png" />
     <EmbeddedResource Include="Artwork\Cards\3D\lifepack_moth_calyptra_e.png" />
     <EmbeddedResource Include="Artwork\Cards\3D\lifepack_mouse_dice.png" />

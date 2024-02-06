@@ -30,8 +30,8 @@ namespace lifeSigils.Cards
 
 			List<Trait> Traits = new List<Trait>();
 
-			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifecost_Vampire_Bat.png");
-			Texture2D eTexture = SigilUtils.Texture_Helper("lifecost_Vampire_Bat_e.png");
+			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_bat_vampire.png");
+			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_bat_vampire_e.png");
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(
 				InternalName: name,
