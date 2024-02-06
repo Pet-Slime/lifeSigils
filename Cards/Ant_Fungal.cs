@@ -28,7 +28,7 @@ namespace lifeSigils.Cards
 
 			List<Ability> Abilities = new List<Ability>();
 			Abilities.Add(ability_FungalInfection.ability);
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Possessor"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Possessor"));
 
 			List<Trait> Traits = new List<Trait>();
 			Traits.Add(Trait.Ant);

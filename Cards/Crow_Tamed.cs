@@ -43,7 +43,7 @@ namespace lifeSigils.Cards
 
 			List<Ability> Abilities = new List<Ability>();
 			Abilities.Add(Ability.Flying);
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Coin Finder"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Coin Finder"));
 
 			List<Trait> Traits = new List<Trait>();
 

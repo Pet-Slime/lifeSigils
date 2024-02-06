@@ -36,7 +36,7 @@ namespace lifeSigils.Cards
             }
 
             List<Ability> Abilities = new List<Ability>();
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Repellant"));
+            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Repellant"));
         
             List<Trait> Traits = new List<Trait>();
         

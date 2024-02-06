@@ -30,7 +30,7 @@ namespace lifeSigils.Cards
             Tribes.Add(Tribe.Insect);
         
             List<Ability> Abilities = new List<Ability>();
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Draw Bone"));
+            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Draw Bone"));
         
             List<Trait> Traits = new List<Trait>();
             Traits.Add(Trait.KillsSurvivors);

@@ -31,7 +31,7 @@ namespace lifeSigils.Cards
         
             List<Ability> Abilities = new List<Ability>();
             Abilities.Add(Ability.Flying);
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "BloodGuzzler"));
+            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "BloodGuzzler"));
         
             List<Trait> Traits = new List<Trait>();
         

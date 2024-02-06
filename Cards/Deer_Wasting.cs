@@ -30,7 +30,7 @@ namespace lifeSigils.Cards
             Tribes.Add(Tribe.Hooved);
         
             List<Ability> Abilities = new List<Ability>();
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Dying"));
+            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Dying"));
             Abilities.Add(Ability.Strafe);
 
             List<Trait> Traits = new List<Trait>();

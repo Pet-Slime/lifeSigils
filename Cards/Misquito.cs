@@ -32,7 +32,7 @@ namespace lifeSigils.Cards
             Tribes.Add(Tribe.Insect);
         
             List<Ability> Abilities = new List<Ability>();
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Blood Growth"));
+            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Blood Growth"));
         
             List<Trait> Traits = new List<Trait>();
         

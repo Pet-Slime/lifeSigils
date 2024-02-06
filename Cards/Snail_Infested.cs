@@ -33,7 +33,7 @@ namespace lifeSigils.Cards
         
             List<Ability> Abilities = new List<Ability>();
             Abilities.Add(Ability.Reach);
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Bait"));
+            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Bait"));
         
             List<Trait> Traits = new List<Trait>();
             Traits.Add(Trait.KillsSurvivors);

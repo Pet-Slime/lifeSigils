@@ -15,6 +15,248 @@
     <None Remove="Resources\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Artwork\Cards\3D\lifecost_Albino_Familiar.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Albino_Familiar_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_black_dog.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_black_dog_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_bone.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_bone_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_bone_worm.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_bone_worm_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Caladrius.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Caladrius_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Calyptra.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Calyptra_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Candiru_Fish.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Candiru_Fish_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Chupacabra.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Chupacabra_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_coin_crow.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_coin_crow_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_dice_mouse.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_dice_mouse_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_diseased_cow.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_diseased_cow_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_finch.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_finch_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_fire_salamander.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_fire_salamander_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_flea.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_flea_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_fungal_ant.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_fungal_ant_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_greedy_lizard.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_greedy_lizard_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_horn_cottentail.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_horn_cottentail_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_infested_mantis.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_infested_mantis_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Infested_Snail.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Infested_Snail_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Lamprey.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Lamprey_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_maneki_neko.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_maneki_neko_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_misquote.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_misquote_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_mutilated_sow.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_mutilated_sow_alt.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_mutilated_sow_alt_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_mutilated_sow_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_plague_bird.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_plague_bird_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Rabid_Canine.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Rabid_Canine_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_shitting_bull.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_shitting_bull_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Sick_Lion.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Sick_Lion_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Snallygaster.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Snallygaster_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_starving_dog.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_starving_dog_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_tamed_crow.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_tamed_crow_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_tick.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_tick_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Vampire_Bat.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Vampire_Bat_e.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Wasting_deer.png" />
+    <None Remove="Artwork\Cards\3D\lifecost_Wasting_deer_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_ant_fungal.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_ant_fungal_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_bat_vampire.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_bat_vampire_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_bird_caladrius.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_bird_caladrius_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_bird_finch.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_bird_finch_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_bird_plague.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_bird_plague_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_bone.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_bone_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_chupacabra.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_chupacabra_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_cow_diseased.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_cow_diseased_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_cow_mutilated.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_cow_mutilated_a.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_cow_mutilated_a_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_cow_mutilated_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_cow_shitting.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_cow_shitting_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_crow_coin.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_crow_coin_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_crow_tamed.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_crow_tamed_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_deer_wasting.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_deer_wasting_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_dog_black.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_dog_black_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_dog_familiar.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_dog_familiar_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_dog_rabid.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_dog_rabid_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_dog_starving.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_dog_starving_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_fea_blood.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_fea_blood_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_feline_lion.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_feline_lion_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_fish_candiru.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_fish_candiru_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_fish_lamprey.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_fish_lamprey_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_lizard_greedy.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_lizard_greedy_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_lizard_salamander.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_lizard_salamander_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_maneki_neko.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_maneki_neko_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_mantis_infested.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_mantis_infested_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_misquote %282%29.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_misquote.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_moth_calyptra.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_moth_calyptra_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_mouse_dice.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_mouse_dice_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_rabbit_horned.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_rabbit_horned_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_snail_infested.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_snail_infested_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_snallygaster.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_snallygaster_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_tick.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_tick_e.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_worm_bone.png" />
+    <None Remove="Artwork\Cards\3D\lifepack_worm_bone_e.png" />
+    <None Remove="Artwork\Cards\Pixel\pixelportrait_blank.png" />
+    <None Remove="Artwork\Cards\Pixel\pixelportrait_coin_crow.png" />
+    <None Remove="Artwork\Cards\Pixel\pixelportrait_cottentail.png" />
+    <None Remove="Artwork\Cards\Pixel\pixelportrait_flea.png" />
+    <None Remove="Artwork\Cards\Pixel\pixelportrait_misquito.png" />
+    <None Remove="Artwork\Cards\Pixel\pixelportrait_snail.png" />
+    <None Remove="Artwork\Cards\Pixel\pixelportrait_starving_dog.png" />
+    <None Remove="Artwork\Cards\Pixel\pixelportrait_tamed_crow.png" />
+    <None Remove="Artwork\Cards\Pixel\pixelportrait_tick.png" />
+    <None Remove="Artwork\Misc\lifepack_KCM_blooddrinkers.png" />
+    <None Remove="Artwork\Misc\lifepack_KCM_diseased.png" />
+    <None Remove="Artwork\Misc\life_pack.png" />
+    <None Remove="Artwork\Sigils\void_antSpread.png" />
+    <None Remove="Artwork\Sigils\void_antSpread_pixel.png" />
+    <None Remove="Artwork\Sigils\void_BloodBoost.png" />
+    <None Remove="Artwork\Sigils\void_BloodBoost_pixel.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_ant_fungal.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_ant_fungal_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_bat_vampire.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_bat_vampire_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_bird_caladrius.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_bird_caladrius_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_bird_finch.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_bird_finch_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_bird_plague.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_bird_plague_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_bone.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_bone_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_chupacabra.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_chupacabra_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_cow_diseased.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_cow_diseased_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_cow_mutilated.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_cow_mutilated_a.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_cow_mutilated_a_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_cow_mutilated_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_cow_shitting.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_cow_shitting_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_crow_coin.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_crow_coin_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_crow_tamed.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_crow_tamed_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_deer_wasting.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_deer_wasting_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_dog_black.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_dog_black_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_dog_familiar.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_dog_familiar_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_dog_rabid.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_dog_rabid_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_dog_starving.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_dog_starving_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_fea_blood.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_fea_blood_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_feline_lion.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_feline_lion_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_fish_candiru.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_fish_candiru_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_fish_lamprey.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_fish_lamprey_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_lizard_greedy.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_lizard_greedy_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_lizard_salamander.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_lizard_salamander_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_maneki_neko.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_maneki_neko_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_mantis_infested.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_mantis_infested_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_misquote (2).png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_misquote.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_moth_calyptra.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_moth_calyptra_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_mouse_dice.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_mouse_dice_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_rabbit_horned.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_rabbit_horned_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_snail_infested.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_snail_infested_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_snallygaster.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_snallygaster_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_tick.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_tick_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_worm_bone.png" />
+    <EmbeddedResource Include="Artwork\Cards\3D\lifepack_worm_bone_e.png" />
+    <EmbeddedResource Include="Artwork\Cards\Pixel\pixelportrait_blank.png" />
+    <EmbeddedResource Include="Artwork\Cards\Pixel\pixelportrait_coin_crow.png" />
+    <EmbeddedResource Include="Artwork\Cards\Pixel\pixelportrait_cottentail.png" />
+    <EmbeddedResource Include="Artwork\Cards\Pixel\pixelportrait_flea.png" />
+    <EmbeddedResource Include="Artwork\Cards\Pixel\pixelportrait_misquito.png" />
+    <EmbeddedResource Include="Artwork\Cards\Pixel\pixelportrait_snail.png" />
+    <EmbeddedResource Include="Artwork\Cards\Pixel\pixelportrait_starving_dog.png" />
+    <EmbeddedResource Include="Artwork\Cards\Pixel\pixelportrait_tamed_crow.png" />
+    <EmbeddedResource Include="Artwork\Cards\Pixel\pixelportrait_tick.png" />
+    <EmbeddedResource Include="Artwork\Misc\lifepack_KCM_blooddrinkers.png" />
+    <EmbeddedResource Include="Artwork\Misc\lifepack_KCM_diseased.png" />
+    <EmbeddedResource Include="Artwork\Misc\life_pack.png" />
+    <EmbeddedResource Include="Artwork\Sigils\void_antSpread.png" />
+    <EmbeddedResource Include="Artwork\Sigils\void_antSpread_pixel.png" />
+    <EmbeddedResource Include="Artwork\Sigils\void_BloodBoost.png" />
+    <EmbeddedResource Include="Artwork\Sigils\void_BloodBoost_pixel.png" />
+  </ItemGroup>
+
 	<ItemGroup>
 		<PackageReference Include="BepInEx.Analyzers" Version="1.0.8" PrivateAssets="all" />
 		<PackageReference Include="BepInEx.Core" Version="5.4.19" />
@@ -41,84 +283,6 @@
 			<HintPath>lib\Sirenix.Serialization.dll</HintPath>
 		</Reference>
 	</ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Artwork\Artwork.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Artwork.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Artwork\Artwork.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Artwork.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Cards\lifecost_Albino_Familiar_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_black_dog_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_bone_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_bone_worm_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_Chupacabra_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_diseased_cow_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_finch_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_fire_salamander_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_horn_cottentail_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_infested_mantis_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_Infested_Snail_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_Lamprey_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_maneki_neko_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_misquote_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_Rabid_Canine_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_shitting_bull_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_Sick_Lion_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_starving_dog_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_tick_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Cards\lifecost_Wasting_deer_card.jldr2">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
 
   <Target Name="CopyDLLs" AfterTargets="Build">
     <Message Text="Executing CopyDLLs task" Importance="High" />

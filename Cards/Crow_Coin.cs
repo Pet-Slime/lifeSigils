@@ -28,7 +28,7 @@ namespace lifeSigils.Cards
 
 			List<Ability> Abilities = new List<Ability>();
 			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.LifeCost", "Cash Converter"));
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Thief"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Thief"));
 
 			List<Trait> Traits = new List<Trait>();
 

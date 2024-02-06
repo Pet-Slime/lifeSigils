@@ -31,7 +31,7 @@ namespace lifeSigils.Cards
         
             List<Ability> Abilities = new List<Ability>();
             Abilities.Add(Ability.Brittle);
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Caustic"));
+            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Caustic"));
         
             List<Trait> Traits = new List<Trait>();
         

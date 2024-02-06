@@ -35,7 +35,7 @@ namespace lifeSigils.Cards
 
             List<Ability> Abilities = new List<Ability>();
             Abilities.Add(Ability.Submerge);
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Herd"));
+            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Herd"));
         
             List<Trait> Traits = new List<Trait>();
         

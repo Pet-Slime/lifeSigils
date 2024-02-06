@@ -12,7 +12,7 @@ namespace lifeSigils
     public partial class Plugin : BaseUnityPlugin
     {
 		public const string APIGUID = "cyantist.inscryption.api";
-		public const string SigilGUID = "extraVoid.inscryption.voidSigils";
+		public const string SigilGUID = "ATS";
 		public const string StarterdeckGUID = "zorro.inscryption.infiniscryption.sidedecks";
 		public const string PluginGuid = "extraVoid.inscryption.void_life_pack";
         public const string TotemGUID = "Lily.BOT";
@@ -77,8 +77,8 @@ namespace lifeSigils
 
 		private void Start()
         {
-			lifeSigils.Managers.CreateCardPack.TryCreatePack();
-			lifeSigils.Managers.KCM_StartingDeck_Life.AddStartingDeck();
+			Managers.CreateCardPack.TryCreatePack();
+			Managers.KCM_StartingDeck_Life.AddStartingDeck();
 		}
 	}
 }

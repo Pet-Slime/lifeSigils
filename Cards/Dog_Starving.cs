@@ -32,7 +32,7 @@ namespace lifeSigils.Cards
             Tribes.Add(Tribe.Canine);
         
             List<Ability> Abilities = new List<Ability>();
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Random Strike"));
+            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Random Strike"));
         
             List<Trait> Traits = new List<Trait>();
         

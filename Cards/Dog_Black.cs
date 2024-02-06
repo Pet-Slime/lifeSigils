@@ -30,7 +30,7 @@ namespace lifeSigils.Cards
             Tribes.Add(Tribe.Canine);
         
             List<Ability> Abilities = new List<Ability>();
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Possessor"));
+            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Possessor"));
         
             List<Trait> Traits = new List<Trait>();
         

@@ -28,7 +28,7 @@ namespace lifeSigils.Cards
 
 			List<Ability> Abilities = new List<Ability>();
 			Abilities.Add(Ability.Flying);
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Disease Absorbtion"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Disease Absorbtion"));
 
 			List<Trait> Traits = new List<Trait>();
 

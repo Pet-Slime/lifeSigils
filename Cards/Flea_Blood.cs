@@ -32,8 +32,8 @@ namespace lifeSigils.Cards
 			Tribes.Add(Tribe.Insect);
 
 			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Agile"));
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>("extraVoid.inscryption.voidSigils", "Draw Blood"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Agile"));
+			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Draw Blood"));
 
 			List<Trait> Traits = new List<Trait>();
 
