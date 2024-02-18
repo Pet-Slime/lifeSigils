@@ -43,7 +43,8 @@ namespace lifeSigils.Managers
 
         public static CardInfo CreateCardWithDefaultSettings(
             string InternalName, string DisplayName, int attack, int health, Texture2D texture_base, Texture2D texture_emission,
-            List<CardMetaCategory> cardMetaCategories, List<Tribe> tribes, List<Trait> traits, List<Ability> abilities, Texture2D texture_pixel = null, int bloodCost = 0, int boneCost = 0, int energyCost = 0
+            List<CardMetaCategory> cardMetaCategories, List<Tribe> tribes, List<Trait> traits, List<Ability> abilities, 
+            Texture2D texture_pixel = null, int bloodCost = 0, int boneCost = 0, int energyCost = 0
         )
         {
             CardInfo cardinfo = CardManager.New(
@@ -72,7 +73,7 @@ namespace lifeSigils.Managers
             {
                 cardinfo.AddAbilities(abilities[index]);
             }
-            cardinfo.temple = CardTemple.Nature;
+            cardinfo.SetCardTemple(CardTemple.Nature);
             cardinfo.cardComplexity = CardComplexity.Intermediate;
             cardinfo.SetBloodCost(bloodCost);
             cardinfo.SetBonesCost(boneCost);
