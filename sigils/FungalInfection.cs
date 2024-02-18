@@ -58,13 +58,14 @@ namespace lifeSigils
                         target.Anim.LightNegationEffect();
                         crows.Anim.PlaySacrificeParticles();
                         target.Anim.PlaySacrificeParticles();
-                        yield return new WaitForSeconds(0.2f);
-                        yield return target.Die(false, target, true);
                         yield return new WaitForSeconds(0.3f);
+                        yield return target.Die(false, target, true);
+                        yield return new WaitForSeconds(0.5f);
                         if (OPCards[i].Card == null)
                         {
-                            PlayableCard murdered = CardSpawner.SpawnPlayableCard(CardLoader.GetCardByName("lifepack_ant_fungal"));
-                            yield return Singleton<BoardManager>.Instance.ResolveCardOnBoard(murdered, OPCards[i]);
+                            yield return new WaitForSeconds(0.3f);
+                            yield return Singleton<BoardManager>.Instance.CreateCardInSlot(CardLoader.GetCardByName("lifepack_ant_fungal"), OPCards[i]);
+                            yield return new WaitForSeconds(0.3f);
                         }
                     }
                 }
@@ -80,13 +81,14 @@ namespace lifeSigils
                         target.Anim.LightNegationEffect();
                         crows.Anim.PlaySacrificeParticles();
                         target.Anim.PlaySacrificeParticles();
-                        yield return new WaitForSeconds(0.2f);
-                        yield return target.Die(false, target, true);
                         yield return new WaitForSeconds(0.3f);
+                        yield return target.Die(false, target, true);
+                        yield return new WaitForSeconds(0.5f);
                         if (PLCards[i].Card == null)
                         {
-                            PlayableCard murdered = CardSpawner.SpawnPlayableCard(CardLoader.GetCardByName("lifepack_ant_fungal"));
-                            yield return Singleton<BoardManager>.Instance.ResolveCardOnBoard(murdered, PLCards[i]);
+                            yield return new WaitForSeconds(0.3f);
+                            yield return Singleton<BoardManager>.Instance.CreateCardInSlot(CardLoader.GetCardByName("lifepack_ant_fungal"), PLCards[i]);
+                            yield return new WaitForSeconds(0.3f);
                         }
                         
                     }

@@ -15,6 +15,7 @@ namespace lifeSigils.Managers
 
             Texture2D tex_a1 = SigilUtils.Texture_Helper("lifepack_KCM_diseased.png");
             Texture2D tex_a2 = SigilUtils.Texture_Helper("lifepack_KCM_blooddrinkers.png");
+            Texture2D tex_a3 = SigilUtils.Texture_Helper("lifepack_KCM_monster_rancher.png");
 
             StarterDeckInfo Diseased = ScriptableObject.CreateInstance<StarterDeckInfo>();
             Diseased.title = "The Diseased";
@@ -31,12 +32,15 @@ namespace lifeSigils.Managers
 
             StarterDeckManager.Add(Plugin.PluginGuid, Drinkers);
 
-            StarterDeckInfo TESTER = ScriptableObject.CreateInstance<StarterDeckInfo>();
-            TESTER.title = "LIFE TESTERS";
-            TESTER.iconSprite = TextureHelper.ConvertTexture(tex_a2, TextureHelper.SpriteType.StarterDeckIcon);
-            TESTER.cards = new() { CardLoader.GetCardByName("lifepack_fish_lamprey"), CardLoader.GetCardByName("lifepack_bone"), CardLoader.GetCardByName("lifepack_bone") };
+            if (Plugin.configAddMRcards.Value)
+            {
+                StarterDeckInfo MonsterRancher = ScriptableObject.CreateInstance<StarterDeckInfo>();
+                MonsterRancher.title = "Monster Rancher Battle Cards";
+                MonsterRancher.iconSprite = TextureHelper.ConvertTexture(tex_a3, TextureHelper.SpriteType.StarterDeckIcon);
+                MonsterRancher.cards = new() { CardLoader.GetCardByName("lifepack_Gali"), CardLoader.GetCardByName("lifepack_Pixie"), CardLoader.GetCardByName("lifepack_Henger"), CardLoader.GetCardByName("lifepack_Raiga") };
 
-            StarterDeckManager.Add(Plugin.PluginGuid, TESTER);
+                StarterDeckManager.Add(Plugin.PluginGuid, MonsterRancher);
+            }
         }
     }
 }

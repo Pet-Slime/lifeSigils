@@ -1,4 +1,5 @@
 using BepInEx;
+using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
 using InscryptionAPI.Card;
@@ -21,8 +22,9 @@ namespace lifeSigils
 
 		public static string Directory;
 		internal static ManualLogSource Log;
+        internal static ConfigEntry<bool> configAddMRcards;
 
-		private void Awake()
+        private void Awake()
 		{
 
 			Log = base.Logger;
@@ -30,9 +32,10 @@ namespace lifeSigils
 
 			Harmony harmony = new(PluginGuid);
 			harmony.PatchAll();
+            Plugin.configAddMRcards = base.Config.Bind<bool>("Monster Rancher Cards", "Active", true, "Should this mod add 4 monster rancher cards and their starting deck?");
 
 
-			CureAllNegativeSpecialAbility.specialAbility =  SpecialTriggeredAbilityManager.Add(Plugin.PluginGuid, "Illness cure", typeof(CureAllNegativeSpecialAbility)).Id;
+            CureAllNegativeSpecialAbility.specialAbility =  SpecialTriggeredAbilityManager.Add(Plugin.PluginGuid, "Illness cure", typeof(CureAllNegativeSpecialAbility)).Id;
 			GainAllstrikeOnDraw.specialAbility = SpecialTriggeredAbilityManager.Add(Plugin.PluginGuid, "Gain Moon Strike on Draw", typeof(GainAllstrikeOnDraw)).Id;
 			AddFungalInfection();
 			AddBloodBoost();
@@ -70,6 +73,15 @@ namespace lifeSigils
 			Cards.Snallygaster.AddCard();
 			Cards.Tick.AddCard();
 			Cards.Worm_Bone.AddCard();
+
+			if (Plugin.configAddMRcards.Value)
+			{
+
+                Cards.MR_Gali.AddCard();
+                Cards.MR_Henger.AddCard();
+                Cards.MR_Pixie.AddCard();
+                Cards.MR_Raiga.AddCard();
+            }
 
 			Encounters.BirdRush.AddEncounter();
 			Encounters.DogHouse.AddEncounter();
