@@ -29,7 +29,6 @@ namespace lifeSigils.Cards
             List<Ability> Abilities = new List<Ability>();
         
             List<Trait> Traits = new List<Trait>();
-            Traits.Add(Trait.Terrain);
         
             Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_bone.png");
             Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_bone_e.png");
@@ -51,6 +50,7 @@ namespace lifeSigils.Cards
                 energyCost: energyCost
                 );
             newCard.description = description;
+            newCard.SetTerrain();
             CardManager.Add("lifepack", newCard);
         }
     }
