@@ -23,19 +23,25 @@ namespace lifeSigils.Cards
 			int lifeCost = 4;
 
 
-			List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
-            metaCategories.Add(CardMetaCategory.GBCPlayable);
-            metaCategories.Add(CardMetaCategory.GBCPack);
+            List<CardMetaCategory> metaCategories = new List<CardMetaCategory>
+            {
+                CardMetaCategory.GBCPlayable,
+                CardMetaCategory.GBCPack
+            };
 
 
-            List<Tribe> Tribes = new List<Tribe>();
-			Tribes.Add(Tribe.Insect);
+            List<Tribe> Tribes = new List<Tribe>
+            {
+                Tribe.Insect
+            };
 
-			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Agile"));
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Draw Blood"));
+            List<Ability> Abilities = new List<Ability>
+            {
+                GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Agile"),
+                GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Draw Blood")
+            };
 
-			List<Trait> Traits = new List<Trait>();
+            List<Trait> Traits = new List<Trait>();
 
 			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_fea_blood.png");
 			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_fea_blood_e.png");

@@ -21,15 +21,21 @@ namespace lifeSigils.Cards
             int bloodCost = 2;
             int boneCost = 0;
             int energyCost = 0;
-            List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
-            metaCategories.Add(CardMetaCategory.ChoiceNode);
-            metaCategories.Add(CardMetaCategory.TraderOffer);
-            metaCategories.Add(CardMetaCategory.GBCPlayable);
-            metaCategories.Add(CardMetaCategory.GBCPack);
-            List<Tribe> tribes = new List<Tribe>();
-            tribes.Add(Tribe.Canine);
-            List<Ability> Abilities = new List<Ability>();
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Electric"));
+            List<CardMetaCategory> metaCategories = new List<CardMetaCategory>
+            {
+                CardMetaCategory.ChoiceNode,
+                CardMetaCategory.TraderOffer,
+                CardMetaCategory.GBCPlayable,
+                CardMetaCategory.GBCPack
+            };
+            List<Tribe> tribes = new List<Tribe>
+            {
+                Tribe.Canine
+            };
+            List<Ability> Abilities = new List<Ability>
+            {
+                InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Electric")
+            };
             List<Trait> Traits = new List<Trait>();
             Texture2D DefaultTexture = TextureHelper.GetImageAsTexture("lifepack_MR_raiga.png", typeof(Plugin).Assembly, 0);
             Texture2D eTexture = TextureHelper.GetImageAsTexture("lifepack_MR_raiga_e.png", typeof(Plugin).Assembly, 0);

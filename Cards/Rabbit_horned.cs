@@ -21,12 +21,14 @@ namespace lifeSigils.Cards
             int bloodCost = 0;
             int boneCost = 0;
             int energyCost = 0;
-        
-            List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
-            metaCategories.Add(CardMetaCategory.TraderOffer);
-            metaCategories.Add(CardMetaCategory.ChoiceNode);
-            metaCategories.Add(CardMetaCategory.GBCPlayable);
-            metaCategories.Add(CardMetaCategory.GBCPack);
+
+            List<CardMetaCategory> metaCategories = new List<CardMetaCategory>
+            {
+                CardMetaCategory.TraderOffer,
+                CardMetaCategory.ChoiceNode,
+                CardMetaCategory.GBCPlayable,
+                CardMetaCategory.GBCPack
+            };
 
             List<Tribe> Tribes = new List<Tribe>();
             if (BepInEx.Bootstrap.Chainloader.PluginInfos.ContainsKey(Plugin.TotemGUID))
@@ -35,9 +37,11 @@ namespace lifeSigils.Cards
                 Tribes.Add(GuidManager.GetEnumValue<Tribe>("Lily.BOT", "rodent"));
             }
 
-            List<Ability> Abilities = new List<Ability>();
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Repellant"));
-        
+            List<Ability> Abilities = new List<Ability>
+            {
+                GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Repellant")
+            };
+
             List<Trait> Traits = new List<Trait>();
         
             Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_rabbit_horned.png");

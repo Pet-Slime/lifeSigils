@@ -21,19 +21,25 @@ namespace lifeSigils.Cards
 
 			List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
 
-			List<Tribe> Tribes = new List<Tribe>();
-			Tribes.Add(Tribe.Bird);
-			Tribes.Add(Tribe.Reptile);
+            List<Tribe> Tribes = new List<Tribe>
+            {
+                Tribe.Bird,
+                Tribe.Reptile
+            };
 
-			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "BloodGuzzler"));
+            List<Ability> Abilities = new List<Ability>
+            {
+                InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "BloodGuzzler")
+            };
 
-			List<Trait> Traits = new List<Trait>();
+            List<Trait> Traits = new List<Trait>();
 
-			List<SpecialTriggeredAbility> specialAbilities = new List<SpecialTriggeredAbility>();
-			specialAbilities.Add(GainAllstrikeOnDraw.specialAbility);
+            List<SpecialTriggeredAbility> specialAbilities = new List<SpecialTriggeredAbility>
+            {
+                GainAllstrikeOnDraw.specialAbility
+            };
 
-			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_snallygaster.png");
+            Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_snallygaster.png");
 			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_snallygaster_e.png");
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(

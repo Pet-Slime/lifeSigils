@@ -30,8 +30,10 @@ namespace lifeSigils.Cards
             {
                 Ability.ActivatedHeal
             };
-            List<Trait> Traits = new List<Trait>();
-            Traits.Add(Trait.Undead);
+            List<Trait> Traits = new List<Trait>
+            {
+                Trait.Undead
+            };
             Texture2D DefaultTexture = TextureHelper.GetImageAsTexture("lifepack_MR_pixie.png", typeof(Plugin).Assembly, 0);
             Texture2D eTexture = TextureHelper.GetImageAsTexture("lifepack_MR_pixie_e.png", typeof(Plugin).Assembly, 0);
             Texture2D pTexture = TextureHelper.GetImageAsTexture("pixelportrait_pixie.png", typeof(Plugin).Assembly, 0);

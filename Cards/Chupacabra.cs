@@ -23,13 +23,17 @@ namespace lifeSigils.Cards
             int energyCost = 0;
         
             List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
-        
-            List<Tribe> Tribes = new List<Tribe>();
-            Tribes.Add(Tribe.Reptile);
-        
-            List<Ability> Abilities = new List<Ability>();
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Consumer"));
-        
+
+            List<Tribe> Tribes = new List<Tribe>
+            {
+                Tribe.Reptile
+            };
+
+            List<Ability> Abilities = new List<Ability>
+            {
+                GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Consumer")
+            };
+
             List<Trait> Traits = new List<Trait>();
         
             Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_chupacabra.png");

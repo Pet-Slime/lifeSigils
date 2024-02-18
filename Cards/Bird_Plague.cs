@@ -21,19 +21,25 @@ namespace lifeSigils.Cards
 
 			List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
 
-			List<Tribe> Tribes = new List<Tribe>();
-			Tribes.Add(Tribe.Bird);
+            List<Tribe> Tribes = new List<Tribe>
+            {
+                Tribe.Bird
+            };
 
-			List<Ability> Abilities = new List<Ability>();
-			Abilities.Add(Ability.Flying);
-			Abilities.Add(Ability.ExplodeOnDeath);
+            List<Ability> Abilities = new List<Ability>
+            {
+                Ability.Flying,
+                Ability.ExplodeOnDeath
+            };
 
-			List<Trait> Traits = new List<Trait>();
+            List<Trait> Traits = new List<Trait>();
 
-			List<SpecialTriggeredAbility> specialAbilities = new List<SpecialTriggeredAbility>();
-			specialAbilities.Add(CureAllNegativeSpecialAbility.specialAbility);
+            List<SpecialTriggeredAbility> specialAbilities = new List<SpecialTriggeredAbility>
+            {
+                CureAllNegativeSpecialAbility.specialAbility
+            };
 
-			Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_bird_plague.png");
+            Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_bird_plague.png");
 			Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_bird_plague_e.png");
 
 			CardInfo newCard = SigilUtils.CreateCardWithDefaultSettings(

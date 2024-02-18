@@ -21,23 +21,31 @@ namespace lifeSigils.Cards
             int bloodCost = 0;
             int boneCost = 0;
             int energyCost = 0;
-        
-            List<CardMetaCategory> metaCategories = new List<CardMetaCategory>();
-            metaCategories.Add(CardMetaCategory.TraderOffer);
-            metaCategories.Add(CardMetaCategory.ChoiceNode);
-            metaCategories.Add(CardMetaCategory.GBCPlayable);
-            metaCategories.Add(CardMetaCategory.GBCPack);
 
-            List<Tribe> Tribes = new List<Tribe>();
-            Tribes.Add(Tribe.Insect);
-        
-            List<Ability> Abilities = new List<Ability>();
-            Abilities.Add(Ability.Reach);
-            Abilities.Add(InscryptionAPI.Guid.GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Bait"));
-        
-            List<Trait> Traits = new List<Trait>();
-            Traits.Add(Trait.KillsSurvivors);
-        
+            List<CardMetaCategory> metaCategories = new List<CardMetaCategory>
+            {
+                CardMetaCategory.TraderOffer,
+                CardMetaCategory.ChoiceNode,
+                CardMetaCategory.GBCPlayable,
+                CardMetaCategory.GBCPack
+            };
+
+            List<Tribe> Tribes = new List<Tribe>
+            {
+                Tribe.Insect
+            };
+
+            List<Ability> Abilities = new List<Ability>
+            {
+                Ability.Reach,
+                GuidManager.GetEnumValue<Ability>(Plugin.SigilGUID, "Bait")
+            };
+
+            List<Trait> Traits = new List<Trait>
+            {
+                Trait.KillsSurvivors
+            };
+
             Texture2D DefaultTexture = SigilUtils.Texture_Helper("lifepack_snail_infested.png");
             Texture2D eTexture = SigilUtils.Texture_Helper("lifepack_snail_infested_e.png");
             Texture2D pTexture = SigilUtils.Texture_Helper("pixelportrait_snail.png");
